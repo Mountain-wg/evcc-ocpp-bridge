@@ -1,0 +1,16 @@
+[Unit]
+Description=evcc to OCPP 1.6-J Bridge
+After=network.target evcc.service
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/evcc-ocpp-bridge
+EnvironmentFile=/opt/evcc-ocpp-bridge/.env
+ExecStart=/opt/evcc-ocpp-bridge/venv/bin/python3 /opt/evcc-ocpp-bridge/bridge.py
+Restart=always
+RestartSec=10
+TimeoutStopSec=10
+
+[Install]
+WantedBy=multi-user.target
