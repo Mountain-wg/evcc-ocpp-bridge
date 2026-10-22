@@ -1,4 +1,4 @@
-# evcc to OCPP 1.6-J Bridge
+# evcc to OCPP Bridge
 
 Eine schlanke, bidirektionale Übersetzer-Brücke (**OCPP 1.6-J Bridge**), die eine von [evcc](https://evcc.io) gesteuerte Wallbox (z. B. openWB, go-e, cFos) an professionelle CPO- und THG-Abrechnungsbackends wie **PUMP connect** anbindet.
 
